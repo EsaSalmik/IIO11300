@@ -1,5 +1,5 @@
 ﻿//sovellus lukee tekstitiedostosta ohjastajatietoja ja näyttää ne konsolilla
-
+//tekstitiedosto haettu heppa.hippos.fi 11.1.2017
 using System;
 using System.Data;
 using System.Collections.Generic;
@@ -11,6 +11,8 @@ namespace JAMK.IT
 {
   struct Ohjastaja
   {
+    //perusteellinen selvitys struct-rakenteesta
+    //https://www.dotnetperls.com/struct
     public string Nimi;
     public int Startit;
     public int Voitot;
