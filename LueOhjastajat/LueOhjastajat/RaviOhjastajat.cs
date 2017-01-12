@@ -36,6 +36,7 @@ namespace JAMK.IT
     static void LueTiedostoVerSimple(string tiedosto)
     {
       //luetetaan tiedosto läpi rivi kerrallaan
+      //https://msdn.microsoft.com/en-us/library/aa287535(v=vs.71).aspx
       try
       {
         //luetaan tiedosto ja tallennetaan strukteihin
@@ -50,9 +51,7 @@ namespace JAMK.IT
           Console.WriteLine(counter  + ":" + line);
           counter++;
         }
-
         file.Close();
-
         // Suspend the screen.
         Console.ReadLine();
       }
@@ -60,10 +59,7 @@ namespace JAMK.IT
       {
         throw ex;
       }
-
     }
-
-
     static void LueTiedostoVerStruct(string tiedosto)
     {
       try
